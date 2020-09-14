@@ -1,0 +1,228 @@
+.advantages {
+  background-color: #f2f2f2;
+}
+
+.advantages__content-wrapper {
+  @include content-wrapper;
+}
+
+.advantages__content {
+  position: relative;
+  padding-bottom: 330px;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-top: 50px;
+  margin-bottom: -40px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+    background-size: 157px auto;
+  }
+}
+
+.advantages__triangle {
+  content: "";
+  display: block;
+  top: 0;
+  width: 100%;
+  height: 31px;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.advantages__list {
+  list-style: none;
+  padding: 0 10px;
+  margin: 0;
+}
+
+.advantages__item {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.advantages__headline {
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.advantages__text {
+  color: #283645;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 300;
+  text-align: center;
+  margin: 0;
+}
+
+.advantages__text:first-child {
+  margin-bottom: 32px;
+}
+
+.advantages__text:last-child {
+  padding-bottom: 32px;
+}
+
+.advantages__title {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.advantages__description {
+  margin: 0;
+}
+
+.advantages__break {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__content {
+    padding-left: 300px;
+    padding-bottom: 0;
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    min-height: 430px;
+    margin-top: -47px;
+    margin-bottom: 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-3-tablet@1x.png");
+      background-size: auto;
+    }
+  }
+
+  .advantages__list {
+    padding-top: 20px;
+    padding-right: 0;
+  }
+
+  .advantages__item {
+    text-align: left;
+    margin-bottom: 34px;
+  }
+
+  .advantages__text {
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 0;
+  }
+
+  .advantages__text:first-child {
+    margin-bottom: 0;
+  }
+
+  .advantages__text:nth-child(2) {
+    padding: 0 30px;
+    padding-bottom: 48px;
+  }
+
+  .advantages__triangle {
+    height: 48px;
+  }
+
+  .advantages__break {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__content {
+    padding-left: 0;
+    background-image: none;
+    margin-bottom: -95px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    margin-top: -85px;
+    margin-bottom: 95px;
+  }
+
+  .advantages__item {
+    width: 292px;
+    padding-top: 300px;
+    margin-right: 30px;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+  }
+
+  .advantages__item.advantages__item--friends {
+    margin-right: 0;
+  }
+
+  .advantages__item--mood {
+    background-image: url("../img/iphone-screen-1-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-1-desktop@2x.png");
+      background-size: 100%;
+    }
+  }
+
+  .advantages__item--world {
+    background-image: url("../img/iphone-screen-2-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-2-desktop@2x.png");
+      background-size: 100%;
+    }
+  }
+
+  .advantages__item--friends {
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
+      background-size: 100%;
+    }
+  }
+
+  .advantages__text {
+    font-size: 50px;
+  }
+
+  .advantages__text:last-child {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 90px;
+  }
+
+  .advantages__title {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+    padding-top: 60px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-bottom: 23px;
+  }
+
+  .advantages__description {
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    padding: 0 27px;
+  }
+
+  .advantages__break {
+    display: none;
+  }
+
+  .advantages__triangle {
+    height: 65px;
+  }
+}
