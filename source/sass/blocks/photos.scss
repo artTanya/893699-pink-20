@@ -147,6 +147,7 @@
   }
 }
 
+
 @media (min-width: $tablet-width) {
   .photos__like-text {
     padding: 0;
@@ -170,7 +171,8 @@
   }
 
   .photos__content-wrapper .photos__block {
-    position: relative;
+    display: flex;
+    // flex-direction: row;
     min-height: auto;
   }
 
@@ -193,10 +195,9 @@
   }
 
   .photos__like-button--top {
-    width: 120px;
-    position: absolute;
-    top: 27px;
-    right: 29px;
+    width: 135px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .photos__text-content {
@@ -238,6 +239,7 @@
     margin-bottom: 76px;
   }
 }
+
 
 @media (min-width: $desktop-width) {
   .photos__list {

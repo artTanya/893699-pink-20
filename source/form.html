@@ -106,12 +106,12 @@
               <div class="author-form__stub">
                 <label class="author-form__label" for="telephone">Номер телефона</label>
                 <input class="author-form__input" type="tel" name="tel" id="telephone" placeholder="Номер, пожалуйста">
-                <button class="author-form__button-contacts author-form__button-contacts--phone"></button>
+                <button class="author-form__button-contacts author-form__button-contacts--phone" type="button" aria-label="Ввести номер телефона"></button>
               </div>
               <div class="author-form__stub">
                 <label class="author-form__label" for="email">Адрес почты</label>
                 <input class="author-form__input" type="email" name="email" id="email" required="" placeholder="Введите почту *">
-                <button class="author-form__button-contacts author-form__button-contacts--email"></button>
+                <button class="author-form__button-contacts author-form__button-contacts--email" type="button" aria-label="Ввести почту"></button>
               </div>
             </div>
           </fieldset>
@@ -182,11 +182,11 @@
           <h3 class="popup__title">Что-то пошло не так!</h3>
           <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         </div>
-          <div class="popup__wrapper">
-            <div class="popup__content-wrapper">
-              <button class="popup__button button">ок</button>
-            </div>
+        <div class="popup__wrapper">
+          <div class="popup__content-wrapper">
+            <button class="popup__button button">ок</button>
           </div>
+        </div>
       </div>
         <div class="popup popup--success">
           <div class="popup__content-wrapper">
