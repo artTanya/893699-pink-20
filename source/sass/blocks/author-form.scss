@@ -134,7 +134,7 @@
 
 .author-form__input {
   outline: none;
-  min-height: 63px;
+  height: 63px;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
   width: 100%;
@@ -381,6 +381,7 @@
   }
 
   .author-form__input {
+    height: 63px;
     padding-left: 20px;
   }
 
@@ -395,13 +396,14 @@
     display: block;
     position: absolute;
     width: 60px;
-    height: 59px;
+    height: 60px;
     top: 2px;
     right: 2px;
     background-color: #e5e5e5;
     border: none;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 0;
   }
 
   .author-form__button-contacts--phone {
